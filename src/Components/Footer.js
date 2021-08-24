@@ -66,32 +66,32 @@ const Title = styled.div`
  font-weight:bold;
 `;
 
-const Form = styled.div`
- display:flex;
- position: relative;
- padding-top: 1.5rem;
- align-items:center;
 
- & label{
-    position: absolute;
-  top: 0;
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.2s ease-out;
- }
 
- & input:placeholder-shown {
-     opacity: 0;
-  transform: translateY(1rem);
 
+
+
+const Facebook =styled(RiFacebookFill)`
+font-size:16px;
+ &:hover{
+     color:#385898;
  }
 `;
-
-
-const Facebook =styled(RiFacebookFill)``;
-const Instagram =styled(RiInstagramLine)``;
-const Linkdin =styled(RiLinkedinFill)``;
-const Twitter =styled(RiTwitterFill)``;
+const Instagram =styled(RiInstagramLine)`
+&:hover{
+    color:#8a3ab9;
+}
+`;
+const Linkdin =styled(RiLinkedinFill)`
+&:hover{
+    color:#0e76a8;
+}
+`;
+const Twitter =styled(RiTwitterFill)`
+&:hover{
+    color:#1DA1F2;
+}
+`;
 
 
 const Footer = () => {
@@ -100,14 +100,7 @@ const Footer = () => {
             <Wrapper>
                     <Row>
                     <Column>
-                        <h1>Help us Find You a Home</h1>
-                        <Form>
-                            <label>
-                                Email:
-                                <input type="text" name="email" />
-                            </label>
-                            <input type="submit" value="Submit" />
-                        </Form>
+                        <h1>Let us Find You a Home 🏡</h1>
                     </Column>
                     <Column>
                          
@@ -121,10 +114,18 @@ const Footer = () => {
                     </Column>
                     <Column>
                         <Title>Social</Title>
-                        <Links  to="/"><Facebook/>  Facebook</Links>
-                        <Links to="/"><Instagram/>  Instagram</Links>
-                        <Links to="/"><Linkdin/>  Linkedin</Links>
-                        <Links to="/"><Twitter/>  Twitter</Links>
+                        <Links onClick={(e) => {
+                            window.open('https://www.facebook.com/HoneyDC2000/');
+                            }}><Facebook/>  Facebook</Links>
+                        <Links onClick={(e) => {
+                            window.open('https://www.instagram.com/debosmithoney/');
+                            }}><Instagram/>  Instagram</Links>
+                        <Links onClick={(e) => {
+                            window.open('https://www.instagram.com/debosmithoney/');
+                            }}><Linkdin/>  Linkedin</Links>
+                        <Links onClick={(e) => {
+                            window.open('https://twitter.com/DebosmitHoney');
+                            }}><Twitter/>  Twitter</Links>
                     </Column>
                 </Row>
             </Wrapper>

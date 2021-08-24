@@ -1,14 +1,11 @@
 import React ,{useState} from 'react';
 import Dropdown from '../Components/Dropdown';
-import Hero from '../Components/Hero';
-import InfoSection from '../Components/InfoSection';
 import Navbar from '../Components/Navbar';
-import { InfoDataOne, InfoDataTwo, Middle } from '../Data/InfoData';
-import { SliderData } from '../Data/SliderData';
+import { AboutMe } from '../Data/InfoData';
 import GlobalStyle from '../globalStyles';
 import { AnimatePresence} from 'framer-motion';
+import ContactME from '../Components/ContactME';
 import Footer from '../Components/Footer';
-import MiddleRow from '../Components/MiddleRow';
 
 const Contact = () => {
     const [isOpen,setIsOpen] = useState(false);
@@ -23,6 +20,7 @@ const Contact = () => {
         <AnimatePresence>
         <Navbar toggle={toggle}/>
         <Dropdown isOpen={isOpen} toggle={toggle}/>
+        <ContactME {...AboutMe} />
         <Footer/>
         </AnimatePresence>
     </>

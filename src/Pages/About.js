@@ -1,14 +1,11 @@
 import React ,{useState} from 'react';
 import Dropdown from '../Components/Dropdown';
-import Hero from '../Components/Hero';
-import InfoSection from '../Components/InfoSection';
 import Navbar from '../Components/Navbar';
-import { InfoDataOne, InfoDataTwo, Middle } from '../Data/InfoData';
-import { SliderData } from '../Data/SliderData';
+import { AboutUs} from '../Data/InfoData';
 import GlobalStyle from '../globalStyles';
 import { AnimatePresence} from 'framer-motion';
 import Footer from '../Components/Footer';
-import MiddleRow from '../Components/MiddleRow';
+import AboutInfo from '../Components/AboutInfo';
 
 const About = () => {
 
@@ -24,6 +21,7 @@ const About = () => {
         <AnimatePresence>
         <Navbar toggle={toggle}/>
         <Dropdown isOpen={isOpen} toggle={toggle}/>
+        <AboutInfo {...AboutUs} />
         <Footer/>
         </AnimatePresence>
     </>

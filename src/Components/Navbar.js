@@ -26,10 +26,10 @@ const Nav = styled(motion.nav)`
 const NavLink = css`
  color : #fff;
  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
+ padding: 15px 20px;
+ position: relative;
+ justify-content: center;
+ align-items: center;
  height: 100%;
  cursor: pointer;
  text-decoration: none;

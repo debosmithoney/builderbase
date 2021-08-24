@@ -102,7 +102,7 @@ const InfoSection = ({heading,paragraghOne,paragraghTwo,buttonLabel,reverse,imag
                     animate={animation}
                     initial={{y:-100,opacity:0.1}}
                     variants={variants}>{paragraghTwo}</motion.p>
-                    <Button to="/homes" primary="true">{buttonLabel}</Button>
+                    <Button to="/" primary="true">{buttonLabel}</Button>
                 </ColumnLeft>
                 <ColumnRight reverse={reverse} ref={ref} onReset='false'>
                 <motion.img 

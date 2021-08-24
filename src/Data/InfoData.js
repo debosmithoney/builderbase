@@ -1,6 +1,10 @@
 import ImageOne from '../Images/InteriorOne.jpg';
+import RentInteriorOne from '../Images/RentInteriorOne.jpg';
+import RentInteriorTwo from '../Images/RentInteriorTwo.jpg';
+import RentInteriorThree from '../Images/RentInteriorThree.jpg';
 import ImageTwo from '../Images/InteriorTwo.jpg';
 import ImageThree from '../Images/InteriorThree.jpg';
+import Profile from '../Images/Profile.jpg';
 
 export const InfoDataOne = {
     heading: 'Explore our Beautiful Homes',
@@ -30,4 +34,56 @@ export const Middle= {
     image:ImageThree,
     reverse: true,
     delay: 300
+}
+
+export const InfoDataThree = {
+    heading: 'Explore our Beautiful Homes',
+    paragraghOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi nihil nemo facilis expedita eligendi sit perferendis molestiae enim iste! Enim voluptatibus labore iure facere aut laboriosam iste cum nobis.',
+    paragraghTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi nihil nemo facilis expedita eligendi sit perferendis molestiae enim iste! Enim voluptatibus labore iure facere aut laboriosam iste cum nobis.',
+    buttonLabel: 'View Homes',
+    image:RentInteriorOne,
+    reverse: false,
+    delay: 100
+}
+
+export const InfoDataFour = {
+    heading: 'Explore our Beautiful Homes',
+    paragraghOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi nihil nemo facilis expedita eligendi sit perferendis molestiae enim iste! Enim voluptatibus labore iure facere aut laboriosam iste cum nobis.',
+    paragraghTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi nihil nemo facilis expedita eligendi sit perferendis molestiae enim iste! Enim voluptatibus labore iure facere aut laboriosam iste cum nobis.',
+    paragraphThree: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur numquam rerum accusantium alias, necessitatibus totam odit, placeat eaque consectetur eveniet tempore! Provident, id? Iusto molestias accusantium odit animi labore modi?',
+    buttonLabel: 'View Homes',
+    image: RentInteriorTwo,
+    reverse: false,
+    delay: 100
+}
+
+export const MiddleTwo = {
+    heading: 'Explore our Beautiful Homes',
+    paragraghOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi nihil nemo facilis expedita eligendi sit perferendis molestiae enim iste! Enim voluptatibus labore iure facere aut laboriosam iste cum nobis.',
+    paragraghTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi nihil nemo facilis expedita eligendi sit perferendis molestiae enim iste! Enim voluptatibus labore iure facere aut laboriosam iste cum nobis.',
+    buttonLabel: 'View Homes',
+    image: RentInteriorThree,
+    reverse: false,
+    delay: 100
+}
+
+export const AboutUs = {
+    heading: 'BuilderBase',
+    paragraphThree: 'An imaginary home selling website Developed by Debosmit Choudhury.',
+    paragraghOne: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi nihil nemo facilis expedita eligendi sit perferendis molestiae enim iste! Enim voluptatibus labore iure facere aut laboriosam iste cum nobis.',
+    paragraghTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nisi nihil nemo facilis expedita eligendi sit perferendis molestiae enim iste! Enim voluptatibus labore iure facere aut laboriosam iste cum nobis.',
+    buttonLabel: 'Contact Developer',
+    image: RentInteriorThree,
+    reverse: false,
+    delay: 100
+}
+export const AboutMe = {
+    heading: 'Debosmit Choudhury',
+    paragraphThree: 'I am a 20year old Web Developer who is pursuing BTech Honours from Asansol Engineering College, WB  ',
+    paragraghOne: 'Have also done Projects using Javascript , Netflix Clone(React.JS), Video Conferencing Web App(Node.JS), a Complete Messaging Web App using MERN.This Website is completely Built on Javascript Library , React.JS . Styling has been done using Styled Components and Framer Motion',
+    paragraghTwo: '"You Say if You you Could Fly, you will never come back. You aim for that up and up to the Blue, Blue Sky"-Uzumaki Naruto',
+    buttonLabel: 'View Homes',
+    image: Profile,
+    reverse: true,
+    delay: 100
 }
